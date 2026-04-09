@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ambition IT — Local Web Design & IT Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+<body>
+  <div id="cursor-glow"></div>
+
+  <header id="site-header" class="site-header">
+    <div class="page-width header-inner">
+      <button class="brand-button" data-scroll="#home" type="button">
+        <span class="brand-text">Ambition <span class="primary-text">IT</span></span>
+      </button>
+
+      <nav class="nav-links desktop-nav">
+        <a href="#home">Home</a>
+        <a href="#about-us">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#packages">Website Packages</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="button button-primary hide-sm" data-scroll="#contact" type="button">Get a Quote</button>
+        <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle navigation" type="button">☰</button>
+      </div>
+    </div>
+
+    <div id="mobile-nav" class="mobile-nav">
+      <a href="#home">Home</a>
+      <a href="#about-us">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#packages">Website Packages</a>
+      <a href="#contact">Contact</a>
+      <button class="button button-primary w-full" data-scroll="#contact" type="button">Get a Quote</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero-section">
+      <div class="hero-overlay"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-content page-width">
+        <div class="hero-badge">
+          <span class="status-dot"></span>
+          <span class="status-text">Systems Online</span>
+        </div>
+        <h1 class="hero-title">
+          Modern Web Design<br />
+          &amp; <span class="text-gradient">IT Solutions</span><br />
+        </h1>
+        <p class="hero-copy">
+          Ambition IT is here for all your IT needs, From web design to hardware solutions we have you covered.</p>
+        <div class="hero-buttons">
+          <button class="button button-primary button-large" data-scroll="#contact" type="button">
+            Get Started
+            <span class="button-icon">→</span>
+          </button>
+          <button class="button button-outline button-large" data-scroll="#services" type="button">View Services</button>
+        </div>
+        <button class="scroll-indicator" data-scroll="#about-us" type="button">
+          <span>Scroll</span>
+          <span class="bounce">⌄</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="about-us" class="section section-alt">
+      <div class="page-width section-grid">
+        <div class="section-text">
+          <span class="section-label">// About Us</span>
+            <h2>AMBITION <span class="text-gradient">IT</span></h2>
+          <p>We are a local web design and IT solutions company based in Suffolk helping businesses with their IT needs from web design to hardware solutions.</p>
+          <p>Our approach combines technical expertise with creative vision, ensuring every project we undertake meets the highest standards of quality, performance, and security.</p>
+
+          <div class="pillars-grid">
+            <article class="pillar-card">
+              <span class="pillar-icon">🛡️</span>
+              <h3>Reliability</h3>
+              <p>Enterprise grade solutions you can depend on, keeping your business running smoothly.</p>
+            </article>
+            <article class="pillar-card">
+              <span class="pillar-icon">⚡</span>
+              <h3>Performance</h3>
+              <p>Fast, efficient and scalable systems designed to grow with your business.</p>
+            </article>
+            <article class="pillar-card">
+              <span class="pillar-icon">🎯</span>
+              <h3>Precision</h3>
+              <p>Tailored solutions built around your exact requirements nothing unnecessary, nothing overlooked.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="section-image-card">
+          <img src="img/network cables website photo 2.jpg" alt="Network cables"/>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-me" class="section section-muted">
+      <div class="page-width section-grid reverse-grid">
+        <div class="section-image-card about-me-image">
+          <div class="image-glow"></div>
+          <img src="img/luke faulkner.jpeg" alt="IT Director workspace" />
+          <div class="role-badge">Owner</div>
+        </div>
+
+        <div class="section-text">
+          <span class="section-label">// About Me</span>
+          <h2>The Mind Behind<br /><span class="text-gradient">The Ambition</span></h2>
+          <p class="section-highlight">Luke Faulkner</p>
+          <p>With over 5 years of experience in IT I decided to make the jump and create Ambition IT as a way to provide local businesses with the IT solutions they need to succeed in today's digital landscape.</p>
+          <p>My passion is to work with local businesses to take the stress of IT off their hands and allow them to focus on what they do best. I have a passion for web design, cybersecurity and networking and I am always looking for new ways to improve my skills and knowledge.</p>
+
+          <div class="skill-tags">
+            <span>Web Development</span>
+            <span>IT Infrastructure</span>
+            <span>Hardware Solutions</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="page-width">
+        <div class="section-header">
+          <span class="section-label">// Services</span>
+          <h2>Our <span class="text-gradient">Services</span></h2>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <span class="service-number">01</span>
+            <span class="service-icon">🌐</span>
+            <h3>Web Design & Management</h3>
+            <p>Custom-built, responsive websites designed for performance. We handle everything from initial design to ongoing management and optimisation.</p>
+            <div class="tag-list"><span>UI</span><span>Responsive</span><span>SEO</span><span>Modern</span></div>
+            <button class="link-button" data-scroll="#contact" type="button">Learn More →</button>
+          </article>
+          <article class="service-card">
+            <span class="service-number">02</span>
+            <span class="service-icon">🎧</span>
+            <h3>IT Support</h3>
+            <p>Comprehensive IT support to keep your business running smoothly. From troubleshooting to proactive monitoring, we have your users covered.</p>
+            <div class="tag-list"><span>24/7 Support</span><span>Network</span><span>Security</span><span>Cloud</span></div>
+            <button class="link-button" data-scroll="#contact" type="button">Learn More →</button>
+          </article>
+          <article class="service-card">
+            <span class="service-number">03</span>
+            <span class="service-icon">💾</span>
+            <h3>Hardware Solutions</h3>
+            <p>Expert hardware procurement, configuration, and maintenance. We source, set up, and manage the physical backbone of your technology.</p>
+            <div class="tag-list"><span>Laptops</span><span>Desk solutions</span><span>Setups</span></div>
+            <button class="link-button" data-scroll="#contact" type="button">Learn More →</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="packages" class="section section-muted">
+      <div class="page-width">
+        <div class="section-header">
+          <span class="section-label">// Web Design</span>
+          <h2>Our Web Design <span class="text-gradient">Packages</span></h2>
+        </div>
+
+        <div class="packages-grid">
+          <article class="package-card">
+            <span class="package-name">One Page</span>
+            <p class="package-desc">Perfect for personal brands and simple business presence.</p>
+            <div class="package-price">£180</div>
+            <ul class="feature-list">
+              <li>Single page responsive design</li>
+              <li>Mobile optimised</li>
+              <li>Contact form integration</li>
+              <li>SEO fundamentals</li>
+              <li>1-day delivery</li>
+            </ul>
+            <button class="button button-outline w-full" data-scroll="#contact" type="button">Choose Plan</button>
+          </article>
+          <article class="package-card package-popular">
+            <div class="popular-flag">Most Popular</div>
+            <span class="package-name">Business</span>
+            <p class="package-desc">Complete solution for growing businesses that need more.</p>
+            <div class="package-price">£500</div>
+            <ul class="feature-list">
+              <li>Up to 5 custom pages</li>
+              <li>Responsive design</li>
+              <li>CMS integration</li>
+              <li>Advanced SEO setup</li>
+              <li>Analytics dashboard</li>
+              <li>Email integration</li>
+              <li>5 day delivery</li>
+            </ul>
+            <button class="button button-primary w-full" data-scroll="#contact" type="button">Choose Plan</button>
+          </article>
+          <article class="package-card">
+            <span class="package-name">Custom</span>
+            <p class="package-desc">Enterprise grade web solutions built to your exact specifications.</p>
+            <div class="package-price">£1,500<span class="price-note">+</span></div>
+            <ul class="feature-list">
+              <li>Unlimited pages</li>
+              <li>Custom functionality</li>
+              <li>E-commerce ready</li>
+              <li>Integrations</li>
+              <li>Performance optimisation</li>
+              <li>Priority support</li>
+              <li>1-3 Months delivery</li>
+            </ul>
+            <button class="button button-outline w-full" data-scroll="#contact" type="button">Choose Plan</button>
+          </article>
+        </div>
+
+        <div class="management-note">
+          <span>Website management starting from</span>
+          <strong>£30/month</strong>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="page-width contact-grid">
+        <div class="contact-info">
+          <span class="section-label">// Contact</span>
+          <h2>Let's Build<br /><span class="text-gradient">Something Great</span></h2>
+          <p>Ready to elevate your digital presence? Send us a message and we'll get back to you within 24 hours.</p>
+
+          <div class="info-card">
+            <div class="status-row">
+              <span class="status-dot"></span>
+              <span class="status-text">System Status: Online</span>
+            </div>
+            <div class="info-item"><span class="info-icon">✉️</span><div><strong>Email</strong><span>ambitionit.business@gmail.com</span></div></div>
+            <div class="info-item"><span class="info-icon">📍</span><div><strong>Location</strong><span>Suffolk</span></div></div>
+            <div class="info-item"><span class="info-icon">⏰</span><div><strong>Availability</strong><span>24/7</span></div></div>
+          </div>
+        </div>
+
+        <form id="contact-form" class="contact-form">
+          <label><span>Name</span><input type="text" name="name" placeholder="Your full name" required /></label>
+          <label><span>Email</span><input type="email" name="email" placeholder="your@email.com" required /></label>
+          <label><span>Message</span><textarea name="message" rows="5" placeholder="Tell us about your project..." required></textarea></label>
+          <button class="button button-primary button-large" type="submit"><span id="submit-text">Send Message</span></button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="page-width footer-grid">
+      <div>
+        <div class="brand-row">
+          <span class="brand-text">Ambition <span class="primary-text">IT</span></span>
+        </div>
+        <p>Modern web design &amp; IT solutions for local businesses across East Anglia.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <nav class="footer-nav">
+          <a href="#home">Home</a>
+          <a href="#about-us">About Us</a>
+          <a href="#services">Services</a>
+          <a href="#packages">Website Packages</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <div>
+        <h4>Our Socials</h4>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+          <a href="#" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom page-width">
+      <p>© <span id="current-year"></span> Ambition IT. All rights reserved.</p>
+      <button class="footer-top" data-scroll="#home" type="button">Back to top ↑</button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
